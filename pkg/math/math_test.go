@@ -10,7 +10,7 @@ type Fixture struct {
 func TestAdd(t *testing.T) {
 	for _, fixture := range []Fixture{
 		{[]int{3, 3}, 6},
-		{[]int{4, 12}, 15},
+		{[]int{4, 12}, 16},
 	} {
 		if res := Add(fixture.In[0], fixture.In[1]); res != fixture.Out {
 			t.Errorf("Add(%v); expected %v, got %v",
